@@ -5,7 +5,7 @@ def load_table(a):
   text=''
   if a[-3::]=='csv':
       with open(a, newline='', encoding='utf-8 sig') as csvfile:
-        reader=csv.reader(csvfile,delimiter=';')
+        reader=csv.reader(csvfile,delimiter=',')
         for row in reader:
           dic['names']=row
           break
